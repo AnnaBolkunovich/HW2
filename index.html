@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task 1
+        let name = prompt('Как вас зовут?'), 
+        age = prompt('Сколько вам лет?'), 
+        city = prompt('В каком городе вы живете?'), 
+        phone = prompt('Какой у вас номер телефона?'), 
+        email = prompt('Какая у вас почта?'), 
+        company = prompt('В какой комапнии вы работаете?');
+        document.write('Меня зовут ' + name + '. ');
+        document.write('Мне ' + age + ' лет. ');
+        document.write('Я проживаю в городе ' + city + ' и работаю в компании ' + company + '. ');
+        document.write('Мои контактные данные: ' + phone + ', ' + email + '. ');
+        //Task 2
+        let year = 2020-age;
+        document.write(name + ' родился в ' + year + ' году.');
+        //Task 3
+        let str = '468369';
+        if((+str[0] + +str[1] + +str[2]) == (+str[3] + +str[4] + +str[5])) {alert('да');}
+            else {alert('нет');}
+        //Task 4
+        let a = -3;
+        (a > 0) ? console.log('Верно') : console.log('Неверно');
+        //Task 5
+        console.log('Task 5');
+        let c = 10, b = 2;
+        console.log(c+b);
+        console.log(c-b);
+        console.log(c*b);
+        console.log(c/b);
+        ((c+b) > 1) ? console.log(Math.pow(c+b, 2)) : console.log('Неверно');
+        //Task 6
+        console.log('Task 6');
+        (c > 2 && c < 11 || b >= 6 && b < 14) ? console.log('Верно') : console.log('Неверно');
+        //Task 7
+        console.log('Task 7');
+        let n = prompt('Введите число от 0 до 59');
+        if (n >= 0 && n <= 15) console.log('Первая четверть часа');
+        if (n > 15 && n <= 30) console.log('Вторая четверть часа');
+        if (n > 30 && n <= 45) console.log('Третья четверть часа');
+        if (n > 45 && n <= 59) console.log('Четвертая четверть часа');
+        //Task 8
+        console.log('Task 8');
+        let day = prompt('Введите число месяца от 1 до 31');
+        if (day>=1 && day<=10) console.log('Первая декада месяца');
+        if (day>=11 && day<=20) console.log('Вторая декада месяца');
+        if (day>=21 && day<=31) console.log('Третья декада месяца');
+        //Task 9
+        console.log('Task 9');
+        let d = prompt('Введите количество дней');
+        if (d<7) {
+            console.log('Меньше недели');
+        } else if (d==7) {
+            console.log('Неделя');
+        } else if (d>7 && d<31) {
+            console.log('Меньше месяца');
+        } else if (d==31) {
+            console.log('Месяц');
+        } else if (d>31 && d<365) {
+            console.log('Меньше года');
+        } else if (d==365) {
+            console.log('Год');
+        } else {
+            console.log ('Больше года');
+        }
+        //Task 10
+        console.log('Task 10');
+        let date = new Date(prompt('Введите дату (Год, месяц, число)'));
+        console.log(date);
+        let month = date.getMonth();
+        console.log(date.getMonth());
+        switch (month) {
+            case 0:
+            case 1:  
+                console.log('Пора года - зима');
+            break;
+            case 2: 
+            case 3: 
+            case 4: 
+                console.log('Пора года - весна');
+            break;
+            case 5: 
+            case 6: 
+            case 7: 
+                console.log('Пора года - лето');
+            break;
+            case 8: 
+            case 9: 
+            case 10: 
+                console.log('Пора года - осень');
+            break;
+            case 11: 
+                console.log('Пора года - зима');
+            break;
+            default: 
+                console.log('Что-то ещё');
+
+        }
+    </script>
+</body>
+</html>
